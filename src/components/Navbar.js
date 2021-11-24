@@ -14,8 +14,7 @@ const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-
+  background-color: rgba(0, 0, 0, 0.6);
 `;
 
 const NavLink = css`
@@ -26,7 +25,7 @@ const NavLink = css`
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-`
+`;
 
 const Logo = styled(Link)`
   ${NavLink}
@@ -64,8 +63,9 @@ const NavMenuLinks = styled(Link)`
   ${NavLink}
 
   &:hover { 
+    color: moccasin;
     border-radius: 1px;
-    border-bottom: 1px solid #ffcb2b;
+    border-bottom: 1px solid moccasin;
     transition: opacity 300ms, transform 70ms;
     transform: translate3d(0, 0.2em, 0);
     visibility: visible;
@@ -75,6 +75,7 @@ const NavMenuLinks = styled(Link)`
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-duration: 0.5s;
+  }
 `;
 
 const NavBtn = styled.div`
@@ -91,7 +92,7 @@ const Navbar = ({ toggle }) => {
   return (
     <Nav>
     <Logo to='/'>
-    <img src={NavLogo} style={{height: '50px'}}/><span style={{color: '#ffcb2b'}}>W</span>eb <span style={{color: '#ffcb2b'}}>D</span>esign</Logo>
+    <img src={NavLogo} alt={""} style={{height: '50px'}}/><span style={{color: 'moccasin'}}>Web</span> <span style={{color: 'lightSteelBlue'}}>Design</span></Logo>
     <MenuBars onClick={toggle}/>
     <NavMenu>
       {menuData.map((item, index) => (

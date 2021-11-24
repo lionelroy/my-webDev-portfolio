@@ -9,6 +9,7 @@ const HeroSection = styled.section`
   max-height: 1100px;
   position: relative;
   overflow: hidden;
+  border-bottom: solid 4px white;
 `;
 
 const HeroWrapper = styled.div`
@@ -32,7 +33,7 @@ const HeroImage = styled.img`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: brightness(70%);
+  filter: brightness(75%);
   `;
 
 const HeroContent = styled.div`
@@ -41,13 +42,13 @@ const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   padding-right: 10px;
-  border-bottom:  solid 4px #ffcb2b;
-  border-right:  solid 2px #ffcb2b;
+  border-bottom:  solid 4px moccasin;
+  border-right:  solid 2px lightSteelBlue;
   border-radius: 1px;
   max-width: 500px;
   width: calc(100%-100px);
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 
   @media screen and (min-width: 480px) {
    {
@@ -75,8 +76,10 @@ const HeroButton = styled.div`
   position: absolute;
   display: center;
   margin-top: 240px;
-  @media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: 769px) {
     display: none;
+  }
 `;
 
 
@@ -86,12 +89,12 @@ const Hero = () => {
       <HeroWrapper>
         <HeroImage src={ImgBg}/>
         <HeroContent>
-          <h1>HI, I'M <span style={{color: '#ffcb2b'}}>STEPHANE</span>,</h1>
-          <p>CREATIVE FRONT<span style={{color: '#ffcb2b'}}>-</span>END DEVELOPER <span style={{color: '#ffcb2b'}}>&</span></p>
-          <p>UI<span style={{color: '#ffcb2b'}}>/</span>UX DESIGNER.</p>
+          <h1>HI<span style={{color: 'moccasin'}}>,</span> I<span style={{color: 'moccasin'}}>'</span>M <span style={{color: 'lightSteelBlue'}}>STEPHANE</span><span style={{color: 'moccasin'}}>,</span></h1>
+          <p>CREATIVE FRONT<span style={{color: 'lightSteelBlue'}}>-</span>END DEVELOPER <span style={{color: 'moccasin'}}>&</span></p>
+          <p>UI<span style={{color: 'lightSteelBlue'}}>/</span>UX DESIGNER.</p>
         </HeroContent>
         <HeroButton>
-            <Button style={{backgroundColor: '#ffcb2b', color: ' #2a2a2a'}} primary="true" to="/contact">
+            <Button style={{backgroundColor: 'lightSteelBlue', color: ' #2a2a2a'}} primary="true" to="/contact">
             CONTACT ME
             </Button>
           </HeroButton>
