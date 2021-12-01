@@ -61,20 +61,23 @@ const NavMenu = styled.div`
 
 const NavMenuLinks = styled(Link)`
   ${NavLink}
+  font-weight: bold;
+
 
   &:hover { 
     color: moccasin;
-    border-radius: 1px;
-    border-bottom: 1px solid moccasin;
-    transition: opacity 300ms, transform 70ms;
-    transform: translate3d(0, 0.2em, 0);
+    border-radius: 4px;
+    background-color:  lightSteelBlue;
+    color: #2d2d2d;
+    transition: opacity 200ms, transform 200ms;
+    transform: translate3d(0, 0.4em, 0);
     visibility: visible;
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
     animation-delay: 0s;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
   }
 `;
 
@@ -92,7 +95,7 @@ const Navbar = ({ toggle }) => {
   return (
     <Nav>
     <Logo to='/'>
-    <img src={NavLogo} alt={""} style={{height: '50px'}}/><span style={{color: 'moccasin'}}>Web</span> <span style={{color: 'lightSteelBlue'}}>Design</span></Logo>
+    <img src={NavLogo} to="/" alt={""} style={{height: '50px'}}/></Logo>
     <MenuBars onClick={toggle}/>
     <NavMenu>
       {menuData.map((item, index) => (
@@ -102,7 +105,7 @@ const Navbar = ({ toggle }) => {
       ))}
     </NavMenu>
     <NavBtn>
-      <Button to="/contact" primary="true">CONTACT ME</Button>
+      <Button to="/contact" primary="true">CONTACT</Button>
     </NavBtn>
     </Nav>
   );

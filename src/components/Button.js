@@ -11,6 +11,7 @@ export const Button = styled(Link)`
   text-decoration: none;
   transition: 0.3s;
   display: flex;
+  font-weight: bold;
   justify-content: center;
   align-items: center;
   background-color: moccasin;
@@ -23,4 +24,4 @@ export const Button = styled(Link)`
     color: #2a2a2a;   
     border-radius: 0px;
   }
-`;;
+`;

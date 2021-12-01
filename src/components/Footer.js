@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const Section = styled.div`
@@ -55,8 +55,9 @@ const Icons = css`
   border-radius: 4px;
   color: #2a2a2a;
 
-  &:hover{
-    font-size: clamp(1.5rem, 9vw, 2rem);
+  &:hover {
+    font-size: clamp(1.5rem, 10vw, 2rem);
+    transform: translate3d(0, -0.2em, 0);
   }
 `;
 
@@ -79,20 +80,20 @@ const Footer = () => {
         <Container>
           <FooterRight>
             <FooterCopyright>
-              <h4>© 2021, SR Web Design</h4>
+              <h4>© 2021 · Stephane Roy</h4>
             </FooterCopyright>
           </FooterRight>
           <FooterLeft>
             <SocialIcons>
-              <a href="//www.google.com" rel="noopener noreferrer"
+              <a href="https://github.com/lionelroy" rel="noopener noreferrer"
               target="_blank">
                 <Github />
               </a>
-              <a href="//www.google.com" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/stephane-roy-61b20915b/" rel="noopener noreferrer"
               target="_blank">
                 <LinkedIn />
               </a>
-              <a href="//www.google.com" rel="noopener noreferrer"
+              <a href="https://www.instagram.com/stephaneroyphotography/" rel="noopener noreferrer"
               target="_blank">
                 <Instagram />
               </a>

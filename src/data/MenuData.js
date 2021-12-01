@@ -3,3 +3,7 @@ export const menuData = [
   { title: 'Projects', link: '/projects' },
   { title: 'About', link: '/about' },
 ];
+
+export const resumeData = [
+  { title: 'Resume', link: '/resume' },
+];

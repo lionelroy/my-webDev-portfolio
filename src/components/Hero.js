@@ -1,7 +1,8 @@
 import React from 'react';
-import styled, { css } from 'styled-components/macro';
 import ImgBg from '../assets/images/hero.jpg';
+import styled from 'styled-components';
 import { Button } from './Button';
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 const HeroSection = styled.section`
@@ -10,6 +11,10 @@ const HeroSection = styled.section`
   position: relative;
   overflow: hidden;
   border-bottom: solid 4px white;
+
+  @media (max-width: 767px) {
+    background-position: left;
+}
 `;
 
 const HeroWrapper = styled.div`
@@ -22,18 +27,17 @@ const HeroWrapper = styled.div`
   position: relative;
 `;
 
-const HeroImage = styled.img`
+const HeroImage = styled(motion.img)`
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  filter: brightness(75%);
+  object-fit: cover;
+  filter: brightness(90%);
   `;
 
 const HeroContent = styled.div`
@@ -43,7 +47,7 @@ const HeroContent = styled.div`
   flex-direction: column;
   padding-right: 10px;
   border-bottom:  solid 4px moccasin;
-  border-right:  solid 2px lightSteelBlue;
+  border-right:  solid 3px lightSteelBlue;
   border-radius: 1px;
   max-width: 500px;
   width: calc(100%-100px);
@@ -84,20 +88,61 @@ const HeroButton = styled.div`
 
 
 const Hero = () => {
+
+
+  const fadeAnimation = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1 } },
+    exit: { opacity: 0 }
+  };
+
   return (
     <HeroSection>
       <HeroWrapper>
-        <HeroImage src={ImgBg}/>
+      <AnimatePresence>
+        <HeroImage 
+          src={ImgBg}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
+          variants={fadeAnimation}
+        />
         <HeroContent>
-          <h1>HI<span style={{color: 'moccasin'}}>,</span> I<span style={{color: 'moccasin'}}>'</span>M <span style={{color: 'lightSteelBlue'}}>STEPHANE</span><span style={{color: 'moccasin'}}>,</span></h1>
-          <p>CREATIVE FRONT<span style={{color: 'lightSteelBlue'}}>-</span>END DEVELOPER <span style={{color: 'moccasin'}}>&</span></p>
-          <p>UI<span style={{color: 'lightSteelBlue'}}>/</span>UX DESIGNER.</p>
+          <h1 
+            data-aos='fade-down' 
+            data-aos-duration='800'>
+            HI
+            <span style={{color: 'moccasin'}}>, </span> 
+            I
+            <span style={{color: 'moccasin'}}>'</span>
+            M 
+            <span style={{color: 'lightSteelBlue'}}> STEPHANE</span>
+            <span style={{color: 'moccasin'}}>,</span>
+          </h1>
+          <p  
+            data-aos='fade-right'
+            data-aos-duration='800'
+            data-aos-delay='200'>
+            CREATIVE FRONT
+            <span style={{color: 'moccasin'}}>-</span>
+            END DEVELOPER 
+            <br/>
+            <span style={{color: 'lightSteelBlue'}}>& </span>
+            UI DESIGNER
+            <span style={{color: 'moccasin'}}>.</span>
+          </p>
         </HeroContent>
         <HeroButton>
-            <Button style={{backgroundColor: 'lightSteelBlue', color: ' #2a2a2a'}} primary="true" to="/contact">
-            CONTACT ME
+            <Button 
+              data-aos='zoom-out'
+              data-aos-duration='1000'
+              data-aos-delay='250'
+              style={{backgroundColor: 'lightSteelBlue', color: ' #2a2a2a'}} primary="true" to="/contact"
+            >
+              CONTACT
             </Button>
           </HeroButton>
+          </AnimatePresence>
       </HeroWrapper>
     </HeroSection>
   );
