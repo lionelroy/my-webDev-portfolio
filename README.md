@@ -1,7 +1,7 @@
 # Personal web development portfolio
 Personal portfolio website showcasing my projects, resume, about me page and contact form.
 
-<a class="README-link" href="">Live Demo</a>
+<a class="README-link" href="https://stephaneroy-portfolio.netlify.app">Live Demo</a>
 
 <h3>Technologies:</h3>
  <ul>
@@ -21,11 +21,12 @@ Personal portfolio website showcasing my projects, resume, about me page and con
   <li>framer-motion</li>
   <li>react-icons</li>
   <li>react-pdf</li>
-  <li>react-smooth-scrollbar</li>
   <li>styled-components</li>
 </ul>
 
 <h3>Learned:</h3>
 <ul>
-  <li></li>
+  <li>How to render pdf files with react-pdf.</li>
+  <li>How to setup contact forms trough Netlify.</li>
+  <li>aos animations and framer-motion.</li>
 </ul>
