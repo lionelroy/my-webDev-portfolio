@@ -64,10 +64,15 @@ const ContactForm = () => {
   return (
     <>
       <FormStyle
+        name="contact"
+        method="post"
+        data-netlify="true"
+        onSubmit="Submit"
         data-aos='fade-left'
         data-aos-duration='1200'
         data-aos-once='true'
         data-aos-anchor-placement='center bottom'>
+        <input type="hidden" name="form-name" value="contact" />
         <div 
         className="form-group">
           <label htmlFor="name">
