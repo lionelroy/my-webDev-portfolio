@@ -11,9 +11,7 @@ Personal portfolio website showcasing my projects, resume, about me page and con
  </ul>
 
 ## Preview:
-<img src="src/assets/images/mobile.png" alt="mobile" width="250"/>
-<img src="src/assets/images/tablet.png" alt="ipad" width="500"/>
-<img src="src/assets/images/desktop.png" alt="desktop" width="750"/>
+<img src="src/assets/images/my-webdev-portfolio-src.png" alt="screenshots" width="750"/>
 
 <h3>Dependencies:</h3>
 <ul>
