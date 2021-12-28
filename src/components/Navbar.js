@@ -14,7 +14,7 @@ const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 const NavLink = css`
@@ -65,19 +65,17 @@ const NavMenuLinks = styled(Link)`
 
 
   &:hover { 
-    color: moccasin;
-    border-radius: 4px;
-    background-color:  lightSteelBlue;
-    color: #2d2d2d;
-    transition: opacity 200ms, transform 200ms;
-    transform: translate3d(0, 0.4em, 0);
+    color: lightSteelBlue;
+    border-bottom:  solid 2px;
+    transition: opacity 160ms, transform 160ms;
+    transform: translate3d(0, 0.2em, 0);
     visibility: visible;
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-delay: 0s;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
   }
 `;
 
