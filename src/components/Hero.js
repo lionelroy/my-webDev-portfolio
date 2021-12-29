@@ -37,7 +37,7 @@ const HeroImage = styled(motion.img)`
   height: 100vh;
   background-repeat: no-repeat;
   object-fit: cover;
-  filter: brightness(95%);
+  filter: brightness(90%);
   `;
 
 const HeroContent = styled.div`

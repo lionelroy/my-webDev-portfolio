@@ -9,6 +9,7 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 10px;
 `;
 
 const Container = styled.div`
@@ -108,8 +109,6 @@ const AboutSection = () => {
             </p>
             <ButtonWrap>
               <Button to="/resume" primary="true" style={{backgroundColor: "lightSteelBlue"}}>Resume
-              {/* <Document file={Resume}>
-               </Document> */}
               </Button>
             </ButtonWrap>
            </Content>

@@ -5,8 +5,9 @@ import geYoImg from '../assets/images/geYo-image.png';
 import weatherAppImg from '../assets/images/weather-app-image.png';
 import blogotekImg from '../assets/images/blogotek-image.png';
 
+
 const Section = styled.section`
- border: solid 4px white;
+ border: solid 6px white;
 `;
 
 const Container = styled.div`
@@ -15,7 +16,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 0fr;
   grid-template-rows: 400px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 
 
   @media screen and (max-width: 768px) {
@@ -26,14 +27,20 @@ const Container = styled.div`
 `;
 
 const ColumnLeft = styled.div`
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: lightSteelBlue;
+  color: #2a2a2a;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   line-height: 1.4;
-  padding: 1rem 2rem;
+  padding: 1rem 6rem;
+  
+  @media screen and (max-width: 960px) {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 1rem 2rem;
+  }
 
   h1{
     margin-bottom: 1rem;
@@ -78,7 +85,7 @@ const InfoSection = (delay) => {
           <h1>Blogotek</h1>
           <p>Fully Responsive headless CMS blog focused on technology.</p>
           <Button primary="true" to="" onClick={() => {window.open("https://blogotek.vercel.app", "_blank");}}>View Project</Button>
-          </ColumnLeft>
+        </ColumnLeft>
         <ColumnRight>
         <img 
           src={blogotekImg} 
