@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const SectionTitle = styled.div`
   background-color: #2a2a2a;
-  color: white;
+  color: lightSteelBlue;
   display: flex;
   justify-content: center;
   align-items: center;
