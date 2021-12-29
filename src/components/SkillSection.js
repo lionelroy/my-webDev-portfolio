@@ -46,7 +46,11 @@ const TechIconsRow1 = styled.div`
   padding-left: 12px;
   padding-right: 12px;
   overflow: hidden;
-`;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 6px;
+  }
+  `;
 
 const TechIconsRow2 = styled.div`
   display: flex;
@@ -55,6 +59,9 @@ const TechIconsRow2 = styled.div`
   padding-left: 12px;
   padding-right: 12px;
   overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 6px;
 `;
 
 const TechIconsRow3 = styled.div`
@@ -64,6 +71,9 @@ const TechIconsRow3 = styled.div`
   padding-left: 12px;
   padding-right: 12px;
   overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 6px;
 `;
 
 const Icons = css`
@@ -79,8 +89,11 @@ const Icons = css`
     color: lightSteelBlue;
   }
 
+  @media screen and (max-width: 960px) {
+  font-size: clamp(4rem, 10vw, 5rem);
+
   @media screen and (max-width: 480px) {
-  font-size: clamp(3.7rem, 9vw, 4.5rem);
+  font-size: clamp(3.6rem, 8.8vw, 4.4rem);
   }
 `;
 
