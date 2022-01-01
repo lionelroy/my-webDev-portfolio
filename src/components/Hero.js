@@ -37,7 +37,7 @@ const HeroImage = styled(motion.img)`
   height: 100vh;
   background-repeat: no-repeat;
   object-fit: cover;
-  filter: brightness(90%);
+  filter: grayscale(100%);
   `;
 
 const HeroContent = styled.div`
@@ -52,7 +52,7 @@ const HeroContent = styled.div`
   max-width: 500px;
   width: calc(100%-100px);
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 
   @media screen and (min-width: 480px) {
    {
