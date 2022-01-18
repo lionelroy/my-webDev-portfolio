@@ -4,7 +4,7 @@ import { Button } from './Button';
 import geYoImg from '../assets/images/geYo-image.png';
 import weatherAppImg from '../assets/images/weather-app-image.png';
 import blogotekImg from '../assets/images/blogotek-image.png';
-import { FaSass, FaReact, FaGithub } from 'react-icons/fa';
+import { FaSass, FaReact } from 'react-icons/fa';
 import { SiHtml5, SiJavascript, SiNextdotjs, SiGraphql, SiNetlify, SiMaterialui, SiTailwindcss, SiVercel, SiGooglemaps } from 'react-icons/si';
 import { MdAccessibility } from 'react-icons/md';
 
