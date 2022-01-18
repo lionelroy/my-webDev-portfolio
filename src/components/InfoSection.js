@@ -136,10 +136,6 @@ const GraphqlIcon = styled(SiGraphql)`
   ${Icons}
 `;
 
-const GithubIcon = styled(FaGithub)`
-  ${Icons}
-`;
-
 const NetlifyIcon = styled(SiNetlify)`
   ${Icons}
 `;
