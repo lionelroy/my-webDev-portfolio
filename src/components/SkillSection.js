@@ -91,6 +91,7 @@ const Icons = css`
 
   @media screen and (max-width: 960px) {
   font-size: clamp(4rem, 10vw, 5rem);
+  }
 
   @media screen and (max-width: 480px) {
   font-size: clamp(3.6rem, 8.8vw, 4.4rem);

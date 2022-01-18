@@ -1,7 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { Button } from './Button';
 import AboutPortrait from '../assets/images/self-portrait.jpg';
+import { FaGithub } from 'react-icons/fa';
+
 
 const Section = styled.section`
   background: #2d2d2d;
@@ -59,6 +61,24 @@ const ButtonWrap = styled.div`
   margin-top: 1rem;
 `;
 
+const Icons = css`
+  display: Flex;
+  justify-content: center;
+  font-size: clamp(1.7rem, 5.7vw, 2.8em);
+  border-radius: 4px;
+  color: #2a2a2a;
+  padding-left: 8px;
+
+  &:hover {
+    color: lightSteelBlue;
+  }
+`;
+
+const GithubIcon = styled(FaGithub)`  
+  ${Icons}
+`;
+
+
 const ColumnRight = styled.div`
   position: absolute;
   top: -80px;
@@ -88,7 +108,6 @@ const Image = styled.img`
   }
 `;
 
-
 const AboutSection = () => {
   return (
    <Section>
@@ -110,6 +129,10 @@ const AboutSection = () => {
             <ButtonWrap>
               <Button to="/resume" primary="true" style={{backgroundColor: "lightSteelBlue"}}>Resume
               </Button>
+              <a href="https://github.com/" rel="noopener noreferrer"
+              target="_blank">
+                <GithubIcon />
+              </a>
             </ButtonWrap>
            </Content>
          </ColumnLeft>

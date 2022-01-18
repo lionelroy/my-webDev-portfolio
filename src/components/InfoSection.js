@@ -1,10 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { Button } from './Button';
 import geYoImg from '../assets/images/geYo-image.png';
 import weatherAppImg from '../assets/images/weather-app-image.png';
 import blogotekImg from '../assets/images/blogotek-image.png';
-
+import { FaSass, FaReact, FaGithub } from 'react-icons/fa';
+import { SiHtml5, SiJavascript, SiNextdotjs, SiGraphql, SiNetlify, SiMaterialui, SiTailwindcss, SiVercel, SiGooglemaps } from 'react-icons/si';
+import { MdAccessibility } from 'react-icons/md';
 
 const Section = styled.section`
  border: solid 6px white;
@@ -72,6 +74,88 @@ const ColumnRight = styled.div`
   }
 `;
 
+const TechIcons = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+const Icons = css`
+  display: inlineFlex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 6vw, 3rem);
+  padding: 3px;
+  margin: 0.3rem;
+  margin-left: 0;
+  border-radius: 4px;
+  color: moccasin;
+
+  &:hover {
+    color: #2a2a2a;
+  }
+
+  @media screen and (max-width: 960px) {
+  font-size: clamp(1.8rem, 5.5vw, 2.8rem);
+  color: lightSteelBlue;
+
+    &:hover {
+      color: moccasin;
+    }
+  }
+`;
+
+const HtmlIcon = styled(SiHtml5)`  
+  ${Icons}
+`;
+
+const SassIcon = styled(FaSass)`  
+  ${Icons}
+`;
+
+const MaterialuiIcon = styled(SiMaterialui)`  
+  ${Icons}
+`;
+
+const TailwindIcon = styled(SiTailwindcss)`  
+  ${Icons}
+`;
+
+const JavascriptIcon = styled(SiJavascript)`
+  ${Icons}
+`;
+
+const ReactIcon = styled(FaReact)`
+  ${Icons}
+`;
+
+const NextjsIcon = styled(SiNextdotjs)`
+  ${Icons}
+`;
+
+const GraphqlIcon = styled(SiGraphql)`
+  ${Icons}
+`;
+
+const GithubIcon = styled(FaGithub)`
+  ${Icons}
+`;
+
+const NetlifyIcon = styled(SiNetlify)`
+  ${Icons}
+`;
+
+const VercelIcon = styled(SiVercel)`
+  ${Icons}
+`;
+
+const GooglemapIcon = styled(SiGooglemaps)`
+  ${Icons}
+`;
+
+const AccessibilityIcon = styled(MdAccessibility)`
+  ${Icons}
+`;
+
 const InfoSection = (delay) => {
   return (
     <Section>
@@ -83,6 +167,28 @@ const InfoSection = (delay) => {
           data-aos-delay='100'
           data-aos-anchor-placement='center bottom'>
           <h1>Blogotek</h1>
+          <TechIcons>
+            <a href="https://www.w3schools.com/html/" rel="noopener noreferrer"
+              target="_blank">
+              <TailwindIcon />
+            </a>
+            <a href="https://reactjs.org/" rel="noopener noreferrer"
+              target="_blank">
+              <ReactIcon />
+            </a>
+            <a href="https://nextjs.org/" rel="noopener noreferrer"
+              target="_blank">
+              <NextjsIcon />
+            </a>
+            <a href="https://graphql.org/" rel="noopener noreferrer"
+              target="_blank">
+              <GraphqlIcon />
+            </a>
+            <a href="https://vercel.com/" rel="noopener noreferrer"
+              target="_blank">
+              <VercelIcon />
+            </a>
+          </TechIcons>
           <p>Fully Responsive headless CMS blog focused on technology.</p>
           <Button primary="true" to="" onClick={() => {window.open("https://blogotek.vercel.app", "_blank");}}>View Project</Button>
         </ColumnLeft>
@@ -105,7 +211,25 @@ const InfoSection = (delay) => {
           data-aos-delay='100'
           data-aos-anchor-placement='center bottom'>
           <h1>geYo</h1>
-          <p>Responsive maps application that let's users search for restaurants, hotels and attractions around the world.</p>
+          <TechIcons>
+            <a href="https://www.w3schools.com/html/" rel="noopener noreferrer"
+              target="_blank">
+              <MaterialuiIcon />
+            </a>
+            <a href="https://reactjs.org/" rel="noopener noreferrer"
+              target="_blank">
+              <ReactIcon />
+            </a>
+            <a href="https://www.netlify.com/" rel="noopener noreferrer"
+              target="_blank">
+              <NetlifyIcon />
+            </a>
+            <a href="https://developers.google.com/maps" rel="noopener noreferrer"
+              target="_blank">
+              <GooglemapIcon />
+            </a>
+          </TechIcons>
+          <p>Search for restaurants, hotels and attractions near you with geYo: a responsive Google maps advisory application.</p>
           <Button primary="true" to="" onClick={() => {window.open("https://geyo.netlify.app", "_blank");}}>View Project</Button>
         </ColumnLeft>
         <ColumnRight>
@@ -127,7 +251,25 @@ const InfoSection = (delay) => {
           data-aos-delay={delay}
           data-aos-anchor-placement='center bottom'>
           <h1>Weather App</h1>
-          <p>Weather forecast application that let's users fetch weather from anywhere around the world using city names and zip codes.</p>
+          <TechIcons>
+            <a href="https://www.w3schools.com/html/" rel="noopener noreferrer"
+              target="_blank">
+              <HtmlIcon />
+            </a>
+            <a href="https://sass-lang.com/" rel="noopener noreferrer"
+              target="_blank">
+              <SassIcon />
+            </a>
+            <a href="https://www.javascript.com/" rel="noopener noreferrer"
+              target="_blank">
+              <JavascriptIcon />
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" rel="noopener noreferrer"
+              target="_blank">
+              <AccessibilityIcon />
+            </a>
+          </TechIcons>
+          <p>Mobile-first weather forecast application built using Open Weather Map API, geolocation API and accessibility considerations.</p>
           <Button primary="true" to="" onClick={() => {window.open("https://lionelroy.github.io/weather-app/dist/index.html", "_blank");}}>View Project</Button>
         </ColumnLeft>
         <ColumnRight>

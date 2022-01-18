@@ -61,14 +61,12 @@ const NavMenu = styled.div`
 
 const NavMenuLinks = styled(Link)`
   ${NavLink}
-  font-weight: bold;
-
+  font-size: large;
 
   &:hover { 
     color: lightSteelBlue;
     border-bottom:  solid 2px;
-    transition: opacity 160ms, transform 160ms;
-    transform: translate3d(0, 0.2em, 0);
+    transition: opacity 160ms, transform 250ms;
     visibility: visible;
     opacity: 1;
     animation-name: fadeInOpacity;
