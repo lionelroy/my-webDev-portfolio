@@ -129,7 +129,7 @@ const AboutSection = () => {
             <ButtonWrap>
               <Button to="/resume" primary="true" style={{backgroundColor: "lightSteelBlue"}}>Resume
               </Button>
-              <a href="https://github.com/" rel="noopener noreferrer"
+              <a href="https://github.com/lionelroy" rel="noopener noreferrer"
               target="_blank">
                 <GithubIcon />
               </a>
