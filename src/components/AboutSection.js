@@ -121,10 +121,13 @@ const AboutSection = () => {
               data-aos-once='true'
               data-aos-anchor-placement='center bottom'>
             <h1>About Me</h1>
-            <p>Hi, my name is Stephane Roy, and I'm a self-taught web developer/designer based in Riverview, NB.</p>
-            <p>My journey kickstarted in college five years ago although, it was programming Arduinos and PLCs in electrical class. The Odin Project's Full Stack JavaScript Curriculum is just one of the ways I'm learning web development presently.
+            <p>Hi, my name is <i><b>Stephane Roy</b></i>.</p>
+            <p>I'm a technophile with a background in building automation and electrical systems, self-taught <b>web developer</b>, and photographer based in <b>Riverview, NB</b>.
             </p>
-            <p>My focus is on creating beautiful, responsive websites, and from my background as an automation technician, I'm well acquainted with bringing out solutions to complex problems.
+            <p><b>Designing an application that is truly helpful and attractive to the user is my goal on every project.
+            </b>
+            </p>
+            <p>Check out my Github account to find more projects, such as a Node.js web server, a step-by-step tutorial on TDD with Jest and Enzyme and Book Vault(CRUD web library application).
             </p>
             <ButtonWrap>
               <Button to="/resume" primary="true" style={{backgroundColor: "lightSteelBlue"}}>Resume
