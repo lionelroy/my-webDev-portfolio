@@ -134,9 +134,7 @@ const Hero = () => {
             data-aos='fade-right'
             data-aos-duration='800'
             data-aos-delay='200'>
-            CREATIVE FRONT
-            <span style={{color: 'moccasin'}}>-</span>
-            END DEVELOPER 
+            CREATIVE WEB DEVELOPER 
             <br/>
             <span style={{color: 'lightSteelBlue'}}>& </span>
             UI DESIGNER
