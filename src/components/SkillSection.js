@@ -215,7 +215,7 @@ const SkillSection = () => {
           data-aos-once='true'
           data-aos-delay='100'
           data-aos-anchor-placement='center bottom'>
-          <div class="waviy">            
+          <div className="waviy">            
             <span style={{'--i': 1}}>T</span>           
             <span style={{'--i': 2}}>e</span>
             <span style={{'--i': 3}}>c</span>
