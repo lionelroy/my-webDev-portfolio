@@ -26,9 +26,6 @@ const SectionTitle = styled.div`
   justify-content: center;
   align-items: center;
 
-  .waviy {
-  position: relative;
-  }
   .waviy span {
   position: relative;
   display: inline-block;
