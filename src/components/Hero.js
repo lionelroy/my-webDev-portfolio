@@ -79,7 +79,7 @@ const HeroContent = styled.div`
   }
 
   p {
-    font-size: clamp(1.2em, 8.2vw, 2rem);
+    font-size: clamp(1.2em, 8.2vw, 2.2rem);
     font-weight: 400;
     text-align: left;
     margin-bottom: 0.8rem;

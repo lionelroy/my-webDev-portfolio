@@ -33,16 +33,16 @@ const SectionTitle = styled.div`
   position: relative;
   display: inline-block;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.8em;
   text-shadow: 3px 3px rgba(176, 196, 222, 0.8);
   color: #fff;
   text-transform: uppercase;
-  animation: flip 5s infinite;
-  animation-delay: calc(0.2s * var(--i))
+  animation: flip 7s infinite;
+  animation-delay: calc(0.4s * var(--i))
   }
 
   @keyframes flip {
-  0%,50% {
+  0%,80% {
   transform: rotateY(360deg) 
   }
 }`;
