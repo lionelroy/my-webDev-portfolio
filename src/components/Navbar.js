@@ -7,14 +7,14 @@ import Bars from '../assets/images/bars.svg';
 import NavLogo from '../assets/images/SR.png';
 
 const Nav = styled.nav`
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 `;
 
 const NavLink = css`
@@ -40,8 +40,8 @@ const MenuBars = styled.i`
     background-image: url(${Bars});
     background-size: contain;
     color: #fff;
-    height: 40px;
-    width: 40px;
+    height: 52px;
+    width: 52px;
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -65,8 +65,8 @@ const NavMenuLinks = styled(Link)`
 
   &:hover { 
     color: lightSteelBlue;
-    border-bottom:  solid 2px;
-    transition: opacity 160ms, transform 250ms;
+    font-weight: bold;
+    transition: opacity 140ms, transform 220ms;
     visibility: visible;
     opacity: 1;
     animation-name: fadeInOpacity;
@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
   return (
     <Nav>
     <Logo to='/'>
-    <img src={NavLogo} to="/" alt={""} style={{height: '50px'}}/></Logo>
+    <img src={NavLogo} to="/" alt={""} style={{height: '60px'}}/></Logo>
     <MenuBars onClick={toggle}/>
     <NavMenu>
       {menuData.map((item, index) => (

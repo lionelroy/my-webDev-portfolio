@@ -52,7 +52,7 @@ const HeroContent = styled.div`
   max-width: 500px;
   width: calc(100%-100px);
   color: #fff;
-  background: linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(20, 30, 40, 0.4), rgba(75, 85, 130, 0.5), rgba(130, 145, 187, 0.6), rgba(176, 196, 222, 0.7));
   background-size: 300% 300%;
   background-position: 0 50%;
   border-radius: calc(2 * var(--border-width));

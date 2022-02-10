@@ -29,8 +29,8 @@ const Container = styled.div`
 `;
 
 const ColumnLeft = styled.div`
-  background-color: lightSteelBlue;
-  color: #2a2a2a;
+  background-color: #2a2a2a;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,8 +39,6 @@ const ColumnLeft = styled.div`
   padding: 1rem 6rem;
   
   @media screen and (max-width: 960px) {
-    background-color: #2a2a2a;
-    color: #fff;
     padding: 1rem 2rem;
   }
 
@@ -88,18 +86,14 @@ const Icons = css`
   margin: 0.3rem;
   margin-left: 0;
   border-radius: 4px;
-  color: moccasin;
+  color: lightSteelBlue;
 
   &:hover {
-    color: #2a2a2a;
+    color: moccasin;
   }
 
   @media screen and (max-width: 960px) {
   font-size: clamp(1.8rem, 5.5vw, 2.8rem);
-  color: lightSteelBlue;
-
-    &:hover {
-      color: moccasin;
     }
   }
 `;

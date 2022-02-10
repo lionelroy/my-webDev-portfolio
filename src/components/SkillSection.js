@@ -1,14 +1,14 @@
 import React from 'react';
 import styled, { css } from 'styled-components/macro';
-import { FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaReact, FaLinux, FaGitAlt, FaGithub, FaFigma} from 'react-icons/fa';
-import { SiJavascript,  SiNextdotjs, SiGraphql, SiNetlify, SiVercel, SiAdobelightroom } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaReact, FaLinux, FaGitAlt, FaGithub, FaFigma, FaNodeJs } from 'react-icons/fa';
+import { SiJavascript,  SiNextdotjs, SiGraphql, SiNetlify, SiVercel, SiJest, SiMongodb, SiMysql, SiApache, SiPhp } from 'react-icons/si';
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px;
+  grid-template-rows: 500px;
   margin-bottom: 8px;
 
 
@@ -21,15 +21,31 @@ const Container = styled.div`
 
 const SectionTitle = styled.div`
   background-color: #2a2a2a;
-  color: lightSteelBlue;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  h1{
-    font-size: 2.6rem;
+  .waviy {
+  position: relative;
   }
-`;
+  .waviy span {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 3em;
+  text-shadow: 3px 3px rgba(176, 196, 222, 0.8);
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 5s infinite;
+  animation-delay: calc(0.2s * var(--i))
+  }
+
+  @keyframes flip {
+  0%,50% {
+  transform: rotateY(360deg) 
+  }
+}`;
 
 const TechnologiesSection = styled.div`
   background-color: moccasin;
@@ -76,6 +92,18 @@ const TechIconsRow3 = styled.div`
     padding-left: 6px;
 `;
 
+const TechIconsRow4 = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 6px;
+`;
+
 const Icons = css`
   display: flex;
   align-items: center;
@@ -84,7 +112,6 @@ const Icons = css`
   margin: 0.5rem;
   border-radius: 4px;
   color: #2a2a2a;
-
   &:hover {
     color: lightSteelBlue;
   }
@@ -106,7 +133,6 @@ const CssIcon = styled(FaCss3Alt)`
   ${Icons}
 `;
 
-
 const SassIcon = styled(FaSass)`  
   ${Icons}
 `;
@@ -115,7 +141,19 @@ const BootstrapIcon = styled(FaBootstrap)`
   ${Icons}
 `;
 
+const FigmaIcon = styled(FaFigma)`
+  ${Icons}
+`;
+
 const JavascriptIcon = styled(SiJavascript)`
+  ${Icons}
+`;
+
+const NodeJsIcon = styled(FaNodeJs)`
+  ${Icons}
+`;
+
+const PhpIcon = styled(SiPhp)`
   ${Icons}
 `;
 
@@ -128,6 +166,18 @@ const NextjsIcon = styled(SiNextdotjs)`
 `;
 
 const GraphqlIcon = styled(SiGraphql)`
+  ${Icons}
+`;
+
+const MongoDbIcon = styled(SiMongodb)`
+  ${Icons}
+`;
+
+const MysqlIcon = styled(SiMysql)`
+  ${Icons}
+`;
+
+const JestIcon = styled(SiJest)`
   ${Icons}
 `;
 
@@ -151,11 +201,7 @@ const LinuxIcon = styled(FaLinux)`
   ${Icons}
 `;
 
-const FigmaIcon = styled(FaFigma)`
-  ${Icons}
-`;
-
-const LightroomIcon = styled(SiAdobelightroom)`
+const ApacheIcon = styled(SiApache)`
   ${Icons}
 `;
 
@@ -169,8 +215,21 @@ const SkillSection = () => {
           data-aos-once='true'
           data-aos-delay='100'
           data-aos-anchor-placement='center bottom'>
-          <h1>Technologies</h1>
-          </SectionTitle>
+          <div class="waviy">            
+            <span style={{'--i': 1}}>T</span>           
+            <span style={{'--i': 2}}>e</span>
+            <span style={{'--i': 3}}>c</span>
+            <span style={{'--i': 4}}>h</span>
+            <span style={{'--i': 5}}>n</span>
+            <span style={{'--i': 6}}>o</span>
+            <span style={{'--i': 7}}>l</span>
+            <span style={{'--i': 8}}>o</span>
+            <span style={{'--i': 9}}>g</span>
+            <span style={{'--i': 10}}>i</span>
+            <span style={{'--i': 11}}>e</span>
+            <span style={{'--i': 12}}>s</span>
+          </div>
+        </SectionTitle>
         <TechnologiesSection
           data-aos='zoom-out'
           data-aos-duration='1000'
@@ -195,12 +254,24 @@ const SkillSection = () => {
               target="_blank">
                 <BootstrapIcon />
               </a>
-               <a href="https://www.javascript.com/" rel="noopener noreferrer"
+              <a href="https://www.figma.com/" rel="noopener noreferrer"
               target="_blank">
-                <JavascriptIcon />
-              </a>
+                <FigmaIcon />
+              </a>              
             </TechIconsRow1>
             <TechIconsRow2>
+              <a href="https://www.javascript.com/" rel="noopener noreferrer"
+                target="_blank">
+                <JavascriptIcon />
+              </a>
+              <a href="https://nodejs.org/en/" rel="noopener noreferrer"
+              target="_blank">
+                <NodeJsIcon />
+              </a>
+              <a href="https://www.php.net/" rel="noopener noreferrer"
+              target="_blank">
+                <PhpIcon />
+              </a>
                <a href="https://reactjs.org/" rel="noopener noreferrer"
               target="_blank">
                 <ReactIcon />
@@ -208,21 +279,35 @@ const SkillSection = () => {
                <a href="https://nextjs.org/" rel="noopener noreferrer"
               target="_blank">
                 <NextjsIcon />
-              </a>
-               <a href="https://graphql.org/" rel="noopener noreferrer"
+              </a>                           
+            </TechIconsRow2>
+            <TechIconsRow3>
+            <a href="https://graphql.org/" rel="noopener noreferrer"
               target="_blank">
                 <GraphqlIcon />
+              </a>
+              <a href="https://www.mongodb.com/" rel="noopener noreferrer"
+              target="_blank">
+                <MongoDbIcon />
+              </a>
+              <a href="https://www.mysql.com/" rel="noopener noreferrer"
+              target="_blank">
+                <MysqlIcon />
+              </a>  
+              <a href="https://jestjs.io/" rel="noopener noreferrer"
+              target="_blank">
+                <JestIcon />
               </a>
                <a href="https://git-scm.com/" rel="noopener noreferrer"
               target="_blank">
                 <GitIcon />
-              </a>
-               <a href="https://github.com/" rel="noopener noreferrer"
+              </a>                                      
+            </TechIconsRow3>
+            <TechIconsRow4>
+            <a href="https://github.com/" rel="noopener noreferrer"
               target="_blank">
                 <GithubIcon />
               </a>
-            </TechIconsRow2>
-            <TechIconsRow3>
               <a href="https://www.netlify.com/" rel="noopener noreferrer"
               target="_blank">
                 <NetlifyIcon />
@@ -234,16 +319,12 @@ const SkillSection = () => {
               <a href="https://www.linux.com/" rel="noopener noreferrer"
               target="_blank">
                 <LinuxIcon />
-              </a>
-              <a href="https://www.figma.com/" rel="noopener noreferrer"
+              </a>  
+              <a href="https://www.apache.org/" rel="noopener noreferrer"
               target="_blank">
-                <FigmaIcon />
-              </a>
-              <a href="https://lightroom.adobe.com/" rel="noopener noreferrer"
-              target="_blank">
-                <LightroomIcon />
-              </a>
-            </TechIconsRow3>
+                <ApacheIcon />
+              </a>                         
+            </TechIconsRow4>
         </TechnologiesSection>
         </Container>       
   )
