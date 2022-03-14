@@ -48,7 +48,7 @@ const HeroContent = styled.div`
   padding-right: 10px;
   padding-left: 4px;
   border-bottom:  solid 4px moccasin;
-  border-right:  solid 3px lightSteelBlue;
+  border-right:  solid 3px moccasin;
   border-radius: 1px;
   max-width: 500px;
   width: calc(100%-100px);
