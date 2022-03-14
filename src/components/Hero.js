@@ -46,17 +46,18 @@ const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   padding-right: 10px;
+  padding-left: 4px;
   border-bottom:  solid 4px moccasin;
   border-right:  solid 3px lightSteelBlue;
   border-radius: 1px;
   max-width: 500px;
   width: calc(100%-100px);
   color: #fff;
-  background: linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(20, 30, 40, 0.4), rgba(75, 85, 130, 0.5), rgba(130, 145, 187, 0.6), rgba(176, 196, 222, 0.7));
+  background: linear-gradient(60deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(180, 145, 120, 0.4), rgba(220, 190, 160, 0.5));
   background-size: 300% 300%;
   background-position: 0 50%;
   border-radius: calc(2 * var(--border-width));
-  animation: moveGradient 8s alternate infinite;
+  animation: moveGradient 7s alternate infinite;
 
 
 @keyframes moveGradient {
@@ -134,10 +135,10 @@ const Hero = () => {
             data-aos='fade-right'
             data-aos-duration='800'
             data-aos-delay='200'>
-            CREATIVE FULL STACK DEVELOPER 
+            <span style={{color: 'lightSteelBlue'}}>CREATIVE FULL STACK DEVELOPER</span>             
             <br/>
-            <span style={{color: 'lightSteelBlue'}}>& </span>
-            UI DESIGNER
+            & 
+            <span style={{color: 'lightSteelBlue'}}> UI DESIGNER</span>            
             <span style={{color: 'moccasin'}}>.</span>
           </p>
         </HeroContent>

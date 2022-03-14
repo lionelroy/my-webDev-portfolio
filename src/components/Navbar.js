@@ -65,7 +65,6 @@ const NavMenuLinks = styled(Link)`
 
   &:hover { 
     color: lightSteelBlue;
-    font-weight: bold;
     transition: opacity 140ms, transform 220ms;
     visibility: visible;
     opacity: 1;

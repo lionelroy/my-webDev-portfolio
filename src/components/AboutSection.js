@@ -127,7 +127,7 @@ const AboutSection = () => {
             <p><b>Designing an application that is truly helpful and attractive to the user is my goal on every project.
             </b>
             </p>
-            <p>Check out my Github account to find more projects, such as a Node.js web server, a step-by-step tutorial on TDD with Jest and Enzyme and Book Vault(CRUD web library application).
+            <p>Follow the link to my Github account to find more projects including a web server built with NodeJS, ExpressJS, MongoDB, CRUD operations and REST API; a step-by-step tutorial on Test Automation(TDD) with Jest and Enzyme; an assignment tracker built using the LAMP stack, and more.
             </p>
             <ButtonWrap>
               <Button to="/resume" primary="true" style={{backgroundColor: "lightSteelBlue"}}>Resume

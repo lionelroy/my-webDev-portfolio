@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components/macro';
 import { FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaReact, FaLinux, FaGitAlt, FaGithub, FaFigma, FaNodeJs } from 'react-icons/fa';
-import { SiJavascript,  SiNextdotjs, SiGraphql, SiNetlify, SiVercel, SiJest, SiMongodb, SiMysql, SiApache, SiPhp } from 'react-icons/si';
+import { SiJavascript,  SiNextdotjs, SiGraphql, SiNetlify, SiVercel, SiJest, SiMongodb, SiMysql, SiApache, SiPython } from 'react-icons/si';
 
 const Container = styled.div`
   width: 100%;
@@ -25,24 +25,18 @@ const SectionTitle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .waviy span {
   position: relative;
-  display: inline-block;
   font-weight: bold;
-  font-size: 2.8em;
+  font-size: 2.4em;
   text-shadow: 3px 3px rgba(176, 196, 222, 0.8);
   color: #fff;
   text-transform: uppercase;
-  animation: flip 7s infinite;
-  animation-delay: calc(0.4s * var(--i))
-  }
 
-  @keyframes flip {
-  0%,80% {
-  transform: rotateY(360deg) 
+  @media screen and (max-width: 960px) {
+    padding: 1rem;
   }
-}`;
+}
+`;
 
 const TechnologiesSection = styled.div`
   background-color: moccasin;
@@ -150,7 +144,7 @@ const NodeJsIcon = styled(FaNodeJs)`
   ${Icons}
 `;
 
-const PhpIcon = styled(SiPhp)`
+const PythonIcon = styled(SiPython)`
   ${Icons}
 `;
 
@@ -212,20 +206,7 @@ const SkillSection = () => {
           data-aos-once='true'
           data-aos-delay='100'
           data-aos-anchor-placement='center bottom'>
-          <div className="waviy">            
-            <span style={{'--i': 1}}>T</span>           
-            <span style={{'--i': 2}}>e</span>
-            <span style={{'--i': 3}}>c</span>
-            <span style={{'--i': 4}}>h</span>
-            <span style={{'--i': 5}}>n</span>
-            <span style={{'--i': 6}}>o</span>
-            <span style={{'--i': 7}}>l</span>
-            <span style={{'--i': 8}}>o</span>
-            <span style={{'--i': 9}}>g</span>
-            <span style={{'--i': 10}}>i</span>
-            <span style={{'--i': 11}}>e</span>
-            <span style={{'--i': 12}}>s</span>
-          </div>
+          <h1>Tech Stack</h1>
         </SectionTitle>
         <TechnologiesSection
           data-aos='zoom-out'
@@ -265,9 +246,9 @@ const SkillSection = () => {
               target="_blank">
                 <NodeJsIcon />
               </a>
-              <a href="https://www.php.net/" rel="noopener noreferrer"
+              <a href="https://www.python.org/" rel="noopener noreferrer"
               target="_blank">
-                <PhpIcon />
+                <PythonIcon />
               </a>
                <a href="https://reactjs.org/" rel="noopener noreferrer"
               target="_blank">
