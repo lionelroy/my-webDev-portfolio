@@ -53,7 +53,7 @@ const ColumnLeft = styled.div`
 `;
 
 const ColumnRight = styled.div`
-  background-color: lightSteelBlue;
+  background-color: AliceBlue;
   filter-background: brightness(70%);
   padding: 1rem 1rem;
   padding-top: 3rem;

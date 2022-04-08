@@ -39,7 +39,7 @@ const SectionTitle = styled.div`
 `;
 
 const TechnologiesSection = styled.div`
-  background-color: moccasin;
+  background-color: lightSteelBlue;
   padding-top: 4rem;
   padding-bottom: 4rem;
   }
@@ -104,7 +104,7 @@ const Icons = css`
   border-radius: 4px;
   color: #2a2a2a;
   &:hover {
-    color: lightSteelBlue;
+    color: Moccasin;
   }
 
   @media screen and (max-width: 960px) {

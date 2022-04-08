@@ -15,7 +15,7 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  background: moccasin;
+  background: AliceBlue;
   padding: 3rem 2rem;
   position: relative;
 `;

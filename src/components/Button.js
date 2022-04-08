@@ -14,13 +14,13 @@ export const Button = styled(Link)`
   font-weight: bold;
   justify-content: center;
   align-items: center;
-  background-color: moccasin;
+  background-color: lightSteelBlue;
   padding: ${({ big }) => (big ? '16px 48px' : '10px 14px')};
   color: ${({ primary }) => (primary ? '#2a2a2a' : '#000d1a')};
   font-size: ${({ big }) => (big ? '16px' : '12px')};
 
   &:hover {
-    background-color: lightSteelBlue;
+    background-color: moccasin;
     color: #2a2a2a;   
     border-radius: 0px;
   }
