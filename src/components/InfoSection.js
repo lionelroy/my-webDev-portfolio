@@ -200,7 +200,7 @@ const InfoSection = (delay) => {
           data-aos-once='true'
           data-aos-delay='100'
           data-aos-anchor-placement='center bottom'>
-          <h1>geYo</h1>
+          <h1>Geyo</h1>
           <TechIcons>
             <a href="https://www.w3schools.com/html/" rel="noopener noreferrer"
               target="_blank">
