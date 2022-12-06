@@ -138,7 +138,7 @@ const Hero = () => {
             <span style={{color: 'lightSteelBlue'}}>SOFTWARE QA SPECIALIST</span>             
             <br/>
             & 
-            <span style={{color: 'lightSteelBlue'}}> UI DESIGNER</span>            
+            <span style={{color: 'lightSteelBlue'}}> DEVELOPER</span>            
             <span style={{color: 'moccasin'}}>.</span>
           </p>
         </HeroContent>
