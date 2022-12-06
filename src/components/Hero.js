@@ -129,7 +129,6 @@ const Hero = () => {
             <span style={{color: 'moccasin'}}>'</span>
             M 
             <span style={{color: 'lightSteelBlue'}}> STEPHANE</span>
-            <span style={{color: 'moccasin'}}>,</span>
           </h1>
           <p  
             data-aos='fade-right'
