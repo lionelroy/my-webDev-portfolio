@@ -135,7 +135,7 @@ const Hero = () => {
             data-aos='fade-right'
             data-aos-duration='800'
             data-aos-delay='200'>
-            <span style={{color: 'lightSteelBlue'}}>CREATIVE FRONT END DEVELOPER</span>             
+            <span style={{color: 'lightSteelBlue'}}>SOFTWARE QA SPECIALIST</span>             
             <br/>
             & 
             <span style={{color: 'lightSteelBlue'}}> UI DESIGNER</span>            
