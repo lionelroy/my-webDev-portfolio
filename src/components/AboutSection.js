@@ -122,12 +122,9 @@ const AboutSection = () => {
               data-aos-anchor-placement='center bottom'>
             <h1>About Me</h1>
             <p>Hi, my name is <i><b>Stephane Roy</b></i>.</p>
-            <p>I'm a technophile with a background in building automation and electrical systems, self-taught <b>web developer</b>, and photographer based in <b>Riverview, NB</b>.
+            <p>I'm a Software QA Specialist with a background in building automation and electrical systems based in <b>Riverview, NB</b>.
             </p>
-            <p><b>Designing an application that is truly helpful and attractive to the user is my goal on every project.
-            </b>
-            </p>
-            <p>Follow the link to my Github account to find more projects including a web server built with NodeJS, ExpressJS, MongoDB, CRUD operations and REST API; a step-by-step tutorial on Test Automation(TDD) with Jest and Enzyme; an assignment tracker built using the LAMP stack, and more.
+            <p>Follow the link to my Github account to find more projects including a web server built with NodeJS, ExpressJS, and MongoDB, a shopping list React App, a Python data analysis project, and more.
             </p>
             <ButtonWrap>
               <Button to="/resume" primary="true" style={{backgroundColor: "lightSteelBlue"}}>Resume
