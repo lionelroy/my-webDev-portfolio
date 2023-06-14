@@ -80,7 +80,7 @@ const Footer = () => {
         <Container>
           <FooterRight>
             <FooterCopyright>
-              <h4>© 2021 · Stephane Roy</h4>
+              <h4>© 2023 · Stephane Roy</h4>
             </FooterCopyright>
           </FooterRight>
           <FooterLeft>
